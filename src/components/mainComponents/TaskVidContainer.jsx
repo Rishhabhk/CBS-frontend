@@ -28,7 +28,8 @@ const TaskVidContainer = () => {
             <Slider {...settings} >
                 {
                     TaskVidData.map((vid) => (
-                        <Card sx={{ maxWidth: 245 }} key={vid}  >
+                        <div className="CardContainer">
+                        <Card sx={{ maxWidth: 245 }} key={vid} >
                             <CardActionArea>
                                 <CardMedia
                                     component="img"
@@ -48,6 +49,7 @@ const TaskVidContainer = () => {
                                 </CardContent>
                             </CardActionArea>
                         </Card>
+                        </div>
                     ))
                 }
             </Slider>

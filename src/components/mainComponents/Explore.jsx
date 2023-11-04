@@ -17,9 +17,10 @@ import { TaskData } from '../../data/TaskData';
 import { RandomVidData } from '../../data/RandomVidData';
 import './Explore.css'
 import HotsBlogs from './HotsBlogs';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Explore = () => {
-
+  const navigate = useNavigate();
   return (
     <div className='explore'>
       <div className="exploreMainContent">
@@ -38,8 +39,8 @@ const Explore = () => {
           <div className="randomVids">
             {
               RandomVidData.map((vid) => (
-                <Card sx={{ maxWidth: 245 }} key={vid}  >
-                  <CardActionArea>
+                <Card sx={{ maxWidth: 245 }} key={vid} >
+                  <CardActionArea >
                     <CardMedia
                       component="img"
                       height="100"
