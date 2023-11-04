@@ -5,17 +5,20 @@
     /* grid-template-rows: 85% 90%; */
 }
 .taskone{
+    /* background-color: aqua; */
     /* border: 1px solid black; */
-    border-radius: 5%;
-    margin: 10px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    margin-top: 1rem;
+    /* padding-top: 1rem; */
 }
-.title{
-    margin-top: -25px;
+.taskone form{
+    width: 100%;
+    padding: 1.5rem 1rem 2rem 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
-.desc{
-    margin-top: -25px;
-}
+
+
 
 .submit{
     margin-top: -10px;
@@ -27,12 +30,12 @@
     margin: 10px;
     padding-top: 10px;
 } */
-.taskthree{
+/* .taskthree{
     border: 1px solid black;
     border-radius: 5%;
     margin: 10px;
     padding-left: 30px;
-}
+} */
 /* .taskfour{
     border: 1px solid black;
     border-radius: 5%;
@@ -40,13 +43,33 @@
     margin: 10px;
     padding-top: 10px;
 } */
-.submit{
+/* .submit{
     margin-left: 190px;
-}
+} */
 .icons{
     display: inline;
     margin-right: 20px;
 }
 .tasks{
     margin-left: 10px;
+}
+.taskthree{
+    margin-top: 2rem;
+    /* background-color: aqua; */
+}
+/* .taskContainer{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    gap: 1rem;
+}
+.taskCard{
+    background-color: antiquewhite;
+}
+.statusShare{
+    display: flex;
+    justify-content: space-between;
+} */
+.taskContainer{
+    padding: 0 0.5rem;
 }

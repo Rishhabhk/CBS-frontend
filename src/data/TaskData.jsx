@@ -1,6 +1,6 @@
 export const TaskData = [
     {
-        taskName: 'Pyton',
+        taskName: 'Python',
         taskDesc: 'Backend development using Django',
         taskCompleted: false,
     },

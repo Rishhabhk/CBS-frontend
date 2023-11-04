@@ -28,17 +28,18 @@ const Explore = () => {
           {
             TaskData.map((task) => (
               <div className='taskContainer'>
-                {task.taskName}
+                <Typography variant='body1' style={{paddingLeft:'2rem'}}>{task.taskName}</Typography>
                 <TaskVidContainer />
               </div>
             ))
           }
         </div>
         <div className="randomWrapper">
-          <Typography variant='subtitle1'>Explore Videos</Typography>
+          <Typography variant='h6' style={{display:'flex', justifyContent:'center'}} >Explore Videos</Typography>
           <div className="randomVids">
             {
               RandomVidData.map((vid) => (
+                <div className="RandomCardContainer">
                 <Card sx={{ maxWidth: 245 }} key={vid} >
                   <CardActionArea >
                     <CardMedia
@@ -59,6 +60,7 @@ const Explore = () => {
                     </CardContent>
                   </CardActionArea>
                 </Card>
+                </div>
               ))
             }
           </div>
