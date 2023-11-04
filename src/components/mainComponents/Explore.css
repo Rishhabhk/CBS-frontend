@@ -1,0 +1,12 @@
+.explore{
+    /* background-color: rgb(135, 197, 197); */
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.exploreMainContent{
+    /* background-color: aqua;     */
+}
+.exploreAsideContent{
+    background-color: rgb(219, 214, 207);
+    margin-left: 1rem;
+}
