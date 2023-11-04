@@ -15,6 +15,7 @@ import TaskVidContainer from './TaskVidContainer';
 import '../../data/TaskData'
 import { TaskData } from '../../data/TaskData';
 import './Explore.css'
+import HotsBlogs from './HotsBlogs';
 
 const Explore = () => {
 
@@ -31,7 +32,7 @@ const Explore = () => {
         }
       </div>
       <div className="exploreAsideContent">
-        aside
+        <HotsBlogs/>
       </div>
     </div>
   )
