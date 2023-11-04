@@ -14,6 +14,7 @@ import Slider from "react-slick";
 import TaskVidContainer from './TaskVidContainer';
 import '../../data/TaskData'
 import { TaskData } from '../../data/TaskData';
+import { RandomVidData } from '../../data/RandomVidData';
 import './Explore.css'
 import HotsBlogs from './HotsBlogs';
 
@@ -22,17 +23,48 @@ const Explore = () => {
   return (
     <div className='explore'>
       <div className="exploreMainContent">
-        {
-          TaskData.map((task) => (
-            <div className='taskContainer'> 
-             {task.taskName}
-            <TaskVidContainer />
-            </div>
-          ))
-        }
+        <div className='taskWrapper'>
+          {
+            TaskData.map((task) => (
+              <div className='taskContainer'>
+                {task.taskName}
+                <TaskVidContainer />
+              </div>
+            ))
+          }
+        </div>
+        <div className="randomWrapper">
+          <Typography variant='subtitle1'>Explore Videos</Typography>
+          <div className="randomVids">
+            {
+              RandomVidData.map((vid) => (
+                <Card sx={{ maxWidth: 245 }} key={vid}  >
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="100"
+                      image={vid.imageUrl}
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant='body1' component='div'>
+                        {vid.title}
+                      </Typography>
+                      <br />
+                      <Typography color="text.secondary" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <Typography variant='body2' display='flex' alignItems='center'><VisibilityIcon fontSize='1rem' />{vid.views}</Typography>
+                        <Typography variant='body2' display='flex' alignItems='center'><AccessTimeIcon fontSize='1rem' />{vid.duration}</Typography>
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              ))
+            }
+          </div>
+        </div>
       </div>
       <div className="exploreAsideContent">
-        <HotsBlogs/>
+        <HotsBlogs />
       </div>
     </div>
   )

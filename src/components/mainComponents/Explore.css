@@ -5,6 +5,21 @@
 }
 .exploreMainContent{
     /* background-color: aqua;     */
+    margin: 1rem 0rem;
+}
+.randomWrapper{
+    /* background-color: aqua; */
+}
+.randomVids{
+    margin-top: 1.2rem;
+    display: grid;
+    /* background-color: aqua; */
+    /* align-items: center; */
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1rem;
+
+
 }
 .exploreAsideContent{
     /* background-color: #effdff; */
