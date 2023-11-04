@@ -1,6 +1,4 @@
-*{
-    font-size: 1.1rem;
-}
+
 .taskwrapper{
     display: grid;
     grid-template-columns: 65% 35%;
