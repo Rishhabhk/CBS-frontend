@@ -1,0 +1,54 @@
+*{
+    font-size: 1.1rem;
+}
+.taskwrapper{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 85% 90%;
+}
+.taskone{
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 10px;
+    padding-top: 10px;
+}
+.title{
+    margin-top: -25px;
+}
+.desc{
+    margin-top: -25px;
+}
+
+.submit{
+    margin-top: -10px;
+}
+.tasktwo{
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+}
+.taskthree{
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 10px;
+    padding-left: 30px;
+}
+.taskfour{
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+}
+.submit{
+    margin-left: 190px;
+}
+.icons{
+    display: inline;
+    margin-right: 20px;
+}
+.tasks{
+    margin-left: 10px;
+}
