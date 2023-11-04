@@ -16,6 +16,11 @@ const Community = () => {
         <div className='media'>
         <File />
         </div>
+        <div className='feedpost'>
+            <img className='feedimg' src={on}/>
+            <h4 className='heading'>Rishabh Kushwaha</h4>
+            <img className='bigimg' src={on}/>
+        </div>
         </div>
         <div className='two'>
           two

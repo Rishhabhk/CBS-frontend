@@ -2,11 +2,9 @@
     display: grid;
     grid-template-columns: 65% 35%;
 }
-
 .on{
     border-radius: 50%;
-    height: 30%;
-
+    height: 70px;
 }
 .one{
     border-radius: 1px solid black;
@@ -25,7 +23,7 @@
     margin-left: 100px;
 }
 .media{
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: -10px;
 
 }
@@ -37,4 +35,23 @@
     width: 20%;
     margin-top: -50px;
     margin-left: 380px;
+    margin-bottom: 10px;
+}
+.feedimg{
+    height: 43px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+h4{
+    margin-left: 50px;
+    margin-top: -30px;
+}
+.bigimg{
+    height: 380px;
+    width: 42%;
+    margin-top: 20px;
+    border-radius: 6%;
+}
+.feedpost{
+    background-color: white;
 }
